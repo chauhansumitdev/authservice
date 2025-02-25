@@ -14,6 +14,6 @@ public class Handler {
     public ResponseEntity<Response> response(Exception e){
         Response response =new Response();
         response.setMessage(e.getMessage());
-        return new ResponseEntity<>(response, HttpStatus.UNAUTHORIZED);
+        return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
     }
 }
